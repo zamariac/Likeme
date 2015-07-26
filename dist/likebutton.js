@@ -16,6 +16,14 @@ function start(e){
 		numLikes = numLikes + 1; 
 		console.log (numLikes);
 		$button.html(numLikes + " " + "likes");
+
+
+		if (numLikes === 1){
+			$button.html("1 Like");
+		}
+		else {
+			$button.html(numLikes + " Likes")
+		}
 	}
 
 
